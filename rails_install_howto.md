@@ -1,5 +1,5 @@
 
-# Rails Installation HOWTO
+# Rails Install HOWTO
 
 This document describes how to install RVM, Rails and Guard/Growl on a linux
 box, such as a Ubuntu virtual machine running on Mac OSX.
