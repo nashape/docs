@@ -1,8 +1,8 @@
 
-# A Rails Installation howto
+# Rails Installation
 
-This howto describes setting up linux box, such as Ubuntu on a virtual machine,
-for developing a Rails application. It includes RVM, Rails and Guard/Growl.
+This document describes installing RVM, Rails and Guard/Growl on a linux box,
+such as a Ubuntu virtual machine running on Mac OSX.
 
 I'm little better than a novice at this, so if you use this document, YMMV.
 
@@ -22,12 +22,12 @@ I'm currently running 1.9.3
 Create a gemset for rails:
 
     ```
-    rvm create gemset rails32
+    rvm gemset create rails32
     ```
 Create a gemset for sinatra:
 
     ```
-    rvm create gemset sinatra
+    rvm gemset create sinatra
     ```
 List gemsets:
 
