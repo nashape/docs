@@ -8,7 +8,7 @@ I'm little better than a novice at this, so if you use this document, YMMV.
 
 ## Setting up RVM gemset for Rails
 
-1.  Ruby
+1.  Ruby  
 To show current installations:
 
     ```
@@ -18,7 +18,7 @@ To show current installations:
     ```
 I'm currently running 1.9.3
 
-2.  Gemsets
+2.  Gemsets  
 Create a gemset for rails:
 
     ```
@@ -37,7 +37,7 @@ List gemsets:
 Note, we will use one gemset per project. See step 3. of "Setting up a new
 Rails App" below for creating a project based .rvmrc file.
 
-3.  Installing Rails
+3.  Installing Rails  
 Ensure you're using the correct gemset:
 
     ```
@@ -46,10 +46,10 @@ Ensure you're using the correct gemset:
 Before installing:
 
     ```
-    rails new <app_name> -O
+    gem install rails
     ```
 
-4.  RVM Wrapper for unicorn
+4.  RVM Wrapper for unicorn  
 We need an RVM wrapper for unicorn (for development, I run unicorn in a
 separate screen with the output directed to STDOUT) so that the correct version
 of Ruby and gems is loaded when unicorn runs.  
@@ -91,7 +91,7 @@ the dir (eg. cd ..) then return and answer 'yes' to use the rvmrc file.
     git push -u origin master
     ```
 
-5.  Edit Gemfile
+5.  Edit Gemfile  
 After this line:
 
     ```
@@ -229,7 +229,7 @@ Then at the end of the file:
     end
     ```
 
-12. Edit features/support/env.rb
+12. Edit features/support/env.rb  
 Comment out the lines:
 
     ```
@@ -298,7 +298,7 @@ Also edit the .gitignore file and add (if it is not already there):
     ```
 This will also create a user factory in test/factories.
 
-16. Factory Girl
+16. Factory Girl  
 The test/functional/users_controller_test.rb tests will fail. Edit that file,
 replace this:
 
