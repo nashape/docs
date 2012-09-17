@@ -403,7 +403,7 @@ Update: actually this is an issue when there are all passing tests, including
 if there are no tests at all. This makes sense - it's getting to the end of the
 tests then trying to run the unit tests. But if you include the line above, you
 can no longer run cucumber from the command line.  
-So my solution is now:  
+So my (very hacky) solution is now:  
 
     ```
     if !ENV['GUARD_NOTIFY'].nil? && ENV['GUARD_NOTIFY'] == 'true'
