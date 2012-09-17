@@ -399,10 +399,10 @@ To fix this, add this to the end of 'features/support/env.rb':
     ```
     Test::Unit.run = true
     ```
-Note: this is only an issue when you have **no** features/scenarios. Once you
-have some, you don't need this (so really, you don't need it at all). And if
-you do have this line in your <code>env.rb</code> you can no longer run
-cucumber from the command line.
+Update: actually this is an issue when there are all passing tests, including
+if there are no tests at all. This makes sense - it's getting to the end of the
+tests then trying to run the unit tests. But if you include the line above, you
+can no longer run cucumber from the command line.
 
 8.  Run guard  
 One option is to simply run guard from the command line:
