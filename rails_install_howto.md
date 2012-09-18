@@ -410,6 +410,8 @@ So my (very hacky) solution is now:
       Test::Unit.run = true
     end
     ```
+Further update: I've noticed that if I run guard with the notifications off,
+there is no problem. When the notifications are on, I still get the same error.
 
 8.  Run guard  
 One option is to simply run guard from the command line:
