@@ -179,6 +179,9 @@ puppet manifests to automate this.
     ```curl http://betterthangrep.com/ack-standalone > /usr/local/bin/ack && chmod 0755 !#:3```
 
 24. Install tmux and tmuxinator  
+    Tmux is an alternative to screen. It has much cleaner configuration, and tmuxinator
+    is great for setting up sessions in an easy config file.
+    See https://github.com/aziz/tmuxinator#usage
     ```
     apt-get install tmux
     gem install tmuxinator
