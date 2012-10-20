@@ -185,11 +185,7 @@ puppet manifests to automate this.
 25. Fix time  
     On my install the time was incorrect, despite it displaying the correct timezone.  
     Run ```ntpdate ntp.ubuntu.com```  
-    This corrects it once, but run a cron job to keep it correct, or use ntpd
-    (which, actually, isn't installed yet), see:  
-    https://help.ubuntu.com/community/UbuntuTime#Changing_the_Time_Zone (also
-    has instructions for changing the timezone).  
     This is actually a vm issue:  
-    See http://www.vmware.com/files/pdf/techpaper/Timekeeping-In-VirtualMachines.pdf
-
+    See [my blogpost](http://nashape.com/blog/2012/09/11/a-slow-virtual-machine/)
+    for how to fix this.
 
