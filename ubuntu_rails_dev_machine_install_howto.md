@@ -1,4 +1,3 @@
-
 # Ubuntu Rails Development Machine Install HOWTO
 
 This howto details creating a Ubuntu (virtual) machine for Rails development. I
@@ -179,8 +178,15 @@ puppet manifests to automate this.
     See http://betterthangrep.com/install/ but put into ```/usr/local/bin```  
     ```curl http://betterthangrep.com/ack-standalone > /usr/local/bin/ack && chmod 0755 !#:3```
 
-24. Install screen  
-    ```apt-get install screen```
+24. Install tmux and tmuxinator  
+    Tmux is an alternative to screen. It has much cleaner configuration, and tmuxinator
+    is great for setting up sessions in an easy config file.
+    See https://github.com/aziz/tmuxinator#usage
+    ```
+    apt-get install tmux
+    gem install tmuxinator
+    echo '[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator' >> ~/.zshrc
+    ```
 
 25. Fix time  
     On my install the time was incorrect, despite it displaying the correct timezone.  
