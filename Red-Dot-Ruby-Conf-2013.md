@@ -1,4 +1,6 @@
 
+## Red Dot Ruby Conf 2013
+
 These are my notes from [Red Dot Ruby Conf 2013](http://www.reddotrubyconf.com/)
 focusing on the areas that I'm most interested in. I've updated much of these
 notes with references.
