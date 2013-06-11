@@ -24,12 +24,12 @@ to the master.
 On AWS use EBS to mount data and attach to EC2 instances. Typically store
 database data on the database server or application code on the web server.
 
-The user of a EBS allows snapshots to be created (much quicker to backup a
+The use of a EBS allows snapshots to be created (much quicker to backup a
 mysql database with an EBS snapshot compared to mysql dump) and attached to new
 instances (for example for spinning up new instances to handle load spikes or
 to create a staging environment for load testing).
 
-So you would copy this EBS data onto a new staging instance then run chef to
+You would copy this EBS data onto a new staging instance then run chef to
 update the settings for the staging environment.
 
 #### Chef
