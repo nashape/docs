@@ -95,6 +95,12 @@ as Cross Side Request Forgery (CSRF) and SQL injection.
 Rails provides built in database migrations to allow easy management of
 database schema changes.
 
+### Asset Management
+
+Rails provides an asset pipeline for managing assets. For production this
+precompiles assets, merging javascript and css files into a single file for
+each, and compressing these. This significantly helps website performance.
+
 ##  3. Database
 
 Similar to the code, the database schema has a high level of technical debt.
