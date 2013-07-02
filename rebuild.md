@@ -98,8 +98,9 @@ database schema changes.
 ### Asset Management
 
 Rails provides an asset pipeline for managing assets. For production this
-precompiles assets, merging javascript and css files into a single file for
-each, and compressing these. This significantly helps website performance.
+does asset caching and asset precompilation - merging javascript and css files
+into a single file for each, and compressing these. This significantly helps
+website performance.
 
 ##  3. Database
 
