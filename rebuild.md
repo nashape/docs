@@ -1,6 +1,17 @@
 
-A complete rebuild of the web application is strongly recommended. This
-document discusses the advantages and challanges to this.
+I strongly recommend a complete rebuild of the web application. This document
+discusses the advantages and challanges to doing this.
+
+The web application provides the following:
+* Phone API
+* Admin interface  
+    Used internally to manage the merchant accounts and provide support to the
+    consumers.
+* Merchant interface  
+    Used by merchants to obtain their platform marketing data.
+* Consumer interface  
+    Minor features for consumers such as reviewing their chop and reward
+    history.
 
 ##  1. Technical Debt
 
@@ -25,9 +36,11 @@ XXXX has no automated tests, therefore refactoring is very difficult.
 
 Because of the high level of technical debt, the lack of tests, and the
 intention to add many more features to XXXX, I strongly recommend that the web
-application, including the phone API endpoints, be rebuilt from scratch using
-the Ruby on Rails framework (the current web application has been built using
-the PHP Kohana framework).
+application be rebuilt from scratch using the Ruby on Rails framework (the
+current web application has been built using the PHP Kohana framework).
+
+As already decided, the phone API is to be migrated to Sinatra (a light weight
+Ruby framework).
 
 ##  2. Ruby on Rails
 
@@ -108,13 +121,32 @@ geo-locations.
 ##  4. Challenges
 
 The challanges for rebuilding include:  
-* Time.
-* Migrating existing data.
-* Expertise.
+* Migrating existing data.  
+    The existing data will need to be migrated to the new schema.
+* Time.  
+    Obviously a rebuild will take some time. But fixing the existing code
+    (writing tests and refactoring, as well as the database redesign) will take
+    at least as long.
+* Expertise.  
+    We have some experience with Ruby and Rails but we will need to improve our
+    expertise. This will come from simply building the site using Rails, but
+    this will add time to the development process.
 
 ### Migration Plan
 
-* database data
-* features/rollout
-* testing
+* Database data.  
+    Scripts will have to be written to convert the data to the new schema. The
+    new data will need to be tested.
+* API  
+    The existing phone APIs will have to be replicated in Sinatra to allow
+    phone apps with old code to still function against the new database schema.
+* Transition
+* Testing.  
+    Tests will be written as part of the rebuild but significant real world
+    testing will also need to be undertaken.
+
+    This can be done by hosting the new version of the application on a
+    temporary live server and pointing development versions of the phone app to
+    it.
+
 
