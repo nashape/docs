@@ -101,7 +101,7 @@ Rails has a significantly larger active community than Kohana (PHP has
 many different frameworks where Ruby has coalesced around Rails and Sinatra).
 
 Rails is also a mature technology having been around since 2005, with Rails 4
-being released in the near future.
+having just been released.
 
 This means there is a wealth of support and material to help develop in Rails.
 
