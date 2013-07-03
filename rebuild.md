@@ -121,6 +121,9 @@ A well-structured schema will improve the performance of all aspects of the
 site (including the phone API endpoints) and make the writing of more complex
 queries easier.
 
+The efficiency gains of redesigning the database structure will allow it to
+scale more effectively.
+
 ### NoSQL Database
 
 Another option is to move to a NoSQL database such as MongoDB. A NoSQL database
@@ -154,8 +157,14 @@ application, for example admin reports:
     Scripts will have to be written to convert the data to the new schema. The
     new data will need to be tested.
 * API  
-    The existing phone APIs will have to be replicated in Sinatra to allow
-    phone apps with old code to still function against the new database schema.
+    The existing phone APIs will have to be maintained to allow phone apps with
+    old code to still function.
+
+    An abstraction layer will need to be written between the old code and the
+    new database structure.
+
+    Optionally the original API endpoints could be rewritten in Sinatra to talk
+    directly to the new database structure.
 * Transition
 * Testing.  
     Tests will be written as part of the rebuild but significant real world
