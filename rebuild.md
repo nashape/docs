@@ -131,7 +131,21 @@ allows for much more flexible schemas (which fits better with the design of the
 XXXX application) and MongoDB in particular has in-built support for
 geo-locations.
 
-##  4. Challenges
+##  4. Agile and Goal Directed Design (GDD)
+
+Both Agile and GDD focus the software development on meeting the needs of the
+users. Doing a rebuild of the web application would allow these methods to be
+followed. This will ensure only features truly required by the end user will be
+built.
+
+Another benefit will be involving all of the Perx team in the rebuild – the
+team members become both the consumers of the admin interface and the product
+owners (the product owner decides the priorities for each sprint).
+
+Because of the iterative nature of the Agile method, true user testing can be
+incorporated in this rebuild process.
+
+##  5. Challenges
 
 The challanges for rebuilding include:  
 * Migrating existing data.  
