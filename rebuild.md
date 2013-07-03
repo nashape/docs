@@ -49,7 +49,7 @@ framework.
 
 ### Testing and Test Driven Development (TDD)
 
-Rails has many excellent tools for writing automated tests and for enforcing
+Rails has many excellent tools for writing automated tests and for encouraging
 the TDD method.
 
 This will ensure that tests are written as features are built, which will
@@ -59,22 +59,8 @@ regularly. This in turn will ensure technical debt is kept to a minimum.
 Rails also has much better support than PHP for all levels of testing: unit
 testing, integration test and acceptance (user) testing.
 
-### Community
-
-Rails has a significantly larger active community than Kohana (PHP has
-many different frameworks where Ruby has coalesced around Rails and Sinatra).
-
-Rails is also a mature technology having been around since 2005, with Rails 4
-being released in the near future.
-
-This means there is a wealth of support and material to help develop in Rails.
-
-### Commonly Implemented Features
-
-Rails provides opinionated solutions to common problems. These solutions have
-been developed and improved over time and by many hands and can be reliably
-incorporated (for example the Devise gem which provides a complete
-authentication and authorisation solution).
+The TDD/refactoring method produces much more robust code and the increase in
+confidence allows for features to be developed faster.
 
 ### Development Speed
 
@@ -84,6 +70,13 @@ writing tests) is faster than other frameworks.
 However the initial learning curve for Rails (and Ruby) is significant. There
 are many fewer good Rails developers available for hire (although the calibre
 of Rails developers is usually much higher than that of PHP developers).
+
+### Commonly Implemented Features
+
+Rails provides opinionated solutions to common problems. These solutions have
+been developed and improved over time and by many hands and can be reliably
+incorporated (for example the Devise gem which provides a complete
+authentication and authorisation solution).
 
 ### Security
 
@@ -101,6 +94,16 @@ Rails provides an asset pipeline for managing assets. For production this
 does asset caching and asset precompilation - merging javascript and css files
 into a single file for each, and compressing these. This significantly helps
 website performance.
+
+### Community
+
+Rails has a significantly larger active community than Kohana (PHP has
+many different frameworks where Ruby has coalesced around Rails and Sinatra).
+
+Rails is also a mature technology having been around since 2005, with Rails 4
+being released in the near future.
+
+This means there is a wealth of support and material to help develop in Rails.
 
 ##  3. Database
 
@@ -138,6 +141,12 @@ The challanges for rebuilding include:
     We have some experience with Ruby and Rails but we will need to improve our
     expertise. This will come from simply building the site using Rails, but
     this will add time to the development process.
+
+One option would be to evaluate Rails by re-developing a sub-section of the web
+application, for example admin reports:
+* Redesign the database for the relevant tables.
+* Write and run the scripts to migrate the data.
+* Develop with Rails.
 
 ### Migration Plan
 
