@@ -71,6 +71,11 @@ However the initial learning curve for Rails (and Ruby) is significant. There
 are many fewer good Rails developers available for hire (although the calibre
 of Rails developers is usually much higher than that of PHP developers).
 
+### Framework Structure
+
+Rails uses a very well established MVC structure that will allow for easy
+whitelabelling.
+
 ### Commonly Implemented Features
 
 Rails provides opinionated solutions to common problems. These solutions have
