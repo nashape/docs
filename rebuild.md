@@ -16,7 +16,8 @@ The web application provides the following:
 ##  1. Technical Debt
 
 The current implementation of the XXXX web application, including the phone API
-endpoints, has a very high level of technical debt.
+endpoints, has a very high level of
+[technical debt](http://martinfowler.com/bliki/TechnicalDebt.html).
 
 Technical debt is the cumulation of all of the shortcuts, hacks and poor
 programming practices that programmers do when building software.
@@ -74,14 +75,14 @@ of Rails developers is usually much higher than that of PHP developers).
 ### Framework Structure
 
 Rails uses a very well established MVC structure that will allow for easy
-whitelabelling.
+white labelling.
 
 ### Commonly Implemented Features
 
 Rails provides opinionated solutions to common problems. These solutions have
 been developed and improved over time and by many hands and can be reliably
-incorporated (for example the Devise gem which provides a complete
-authentication and authorisation solution).
+incorporated (for example the Devise gem combined with the CanCan gem provides
+a authentication and authorisation solution).
 
 ### Security
 
@@ -117,7 +118,7 @@ Similar to the code, the database schema has a high level of technical debt.
 ### Relational Schema
 
 The database schema has grown organically. It needs a thorough redesign to
-return it to a well-structured schema.
+return it to a well-structured, normalised schema.
 
 Current SQL queries have more joins than they need. This makes the queries
 slower and more difficult to write.
@@ -143,7 +144,7 @@ users. Doing a rebuild of the web application would allow these methods to be
 followed. This will ensure only features truly required by the end user will be
 built.
 
-Another benefit will be involving all of the Perx team in the rebuild – the
+Another benefit will be involving all of the XXXX team in the rebuild – the
 team members become both the consumers of the admin interface and the product
 owners (the product owner decides the priorities for each sprint).
 
@@ -184,7 +185,6 @@ application, for example admin reports:
 
     Optionally the original API endpoints could be rewritten in Sinatra to talk
     directly to the new database structure.
-* Transition
 * Testing.  
     Tests will be written as part of the rebuild but significant real world
     testing will also need to be undertaken.
