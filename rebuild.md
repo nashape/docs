@@ -1,6 +1,6 @@
 
-I strongly recommend a complete rebuild of the web application. This document
-discusses the advantages and challanges to doing this.
+I strongly recommend a rebuild of the web application. This document discusses
+the advantages and challanges to doing this.
 
 The web application provides the following:
 * Phone API
@@ -19,7 +19,7 @@ The current implementation of the XXXX web application, including the phone API
 endpoints, has a very high level of
 [technical debt](http://martinfowler.com/bliki/TechnicalDebt.html).
 
-Technical debt is the cumulation of all of the shortcuts, hacks and poor
+Technical debt is the normal cumulation of all of the shortcuts, hacks and poor
 programming practices that programmers do when building software.
 
 The problem with technical debt is that it makes adding new features and
@@ -65,16 +65,16 @@ confidence allows for features to be developed faster.
 
 ### Development Speed
 
-Because of its opinionated nature, developing features with Rails (including
-writing tests) is faster than other frameworks.
+Developing features with Rails (including writing tests) is faster than other
+frameworks because of its opinionated nature.
 
 However the initial learning curve for Rails (and Ruby) is significant. There
-are many fewer good Rails developers available for hire (although the calibre
-of Rails developers is usually much higher than that of PHP developers).
+are fewer good Rails developers available for hire (although the calibre of
+Rails developers is usually much higher than that of PHP developers).
 
 ### Framework Structure
 
-Rails uses a very well established MVC structure that will allow for easy
+Rails uses a very well established MVC structure that will allow for simple
 white labelling.
 
 ### Commonly Implemented Features
@@ -84,6 +84,9 @@ been developed and improved over time and by many hands and can be reliably
 incorporated (for example the Devise gem combined with the CanCan gem provides
 a authentication and authorisation solution).
 
+Effectively this is free outsourcing: other great developers have already
+written and tested code that we can easily incoporate.
+
 ### Security
 
 Out of the box Rails provides solutions to many typical security issues, such
@@ -92,13 +95,14 @@ as Cross Side Request Forgery (CSRF) and SQL injection.
 ### Database Migrations
 
 Rails provides built in database migrations to allow easy management of
-database schema changes.
+database schema changes. This includes rollbacks and tracking the complete
+history of the database schema in source control.
 
 ### Asset Management
 
 Rails provides an asset pipeline for managing assets. For production this
 does asset caching and asset precompilation - merging javascript and css files
-into a single file for each, and compressing these. This significantly helps
+into a single file for each, and compressing these. This significantly improves
 website performance.
 
 ### Community
@@ -137,6 +141,9 @@ allows for much more flexible schemas (which fits better with the design of the
 XXXX application) and MongoDB in particular has in-built support for
 geo-locations.
 
+Replication, fail over, high availability and horizontal scaling are all easy
+with MongoDB.
+
 ##  4. Agile and Goal Directed Design (GDD)
 
 Both Agile and GDD focus the software development on meeting the needs of the
@@ -148,8 +155,8 @@ Another benefit will be involving all of the XXXX team in the rebuild – the
 team members become both the consumers of the admin interface and the product
 owners (the product owner decides the priorities for each sprint).
 
-Because of the iterative nature of the Agile method, true user testing can be
-incorporated in this rebuild process.
+True user testing can be incorporated into this rebuild process because of the
+iterative nature of the Agile method.
 
 ##  5. Challenges
 
